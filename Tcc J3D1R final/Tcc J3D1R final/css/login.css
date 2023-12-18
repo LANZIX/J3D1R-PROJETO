@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;1,100&family=Lora:wght@700&family=Montserrat:wght@200;400;500;600&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@700;800&family=Quicksand:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    background-color: #3155A4;
+}
+
+header {
+    width: 100vw; 
+    display: flex;   
+    justify-content: space-between;
+    background-color: #000000;
+}
+
+.logo {
+    padding-left: 60px;
+    padding-top: 10px;
+}
+
+nav {
+    width: 20%;
+    margin-right: 3rem;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+}
+
+nav a {
+    color: rgba(229,231,235);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+main {
+    width: 100vh;
+   
+}
+
+
+form{
+    background-color: rgb(0, 0, 0);
+    max-width: 500px;
+    position: absolute;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+}
+
+form h3{
+    color: #ffffff;
+    text-align: center;
+    
+}
+
+.e-mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    border: 2px solid #000000;
+    padding-left: 10px;
+    margin: 5px 0;
+    border-radius: 16px;
+    /* text-align: center; */
+    
+}
+
+.enviar{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 20px;
+    border: 0;
+    margin: 2px;
+}
+
+#imagem{
+    
+    height: 220px;
+    width: 250px;
+    
+}
+
+.password {
+    width: 100%;
+    height: 45px;
+    border: 2px solid #000000;
+    padding-left: 10px;
+    margin: 5px 0;
+    border-radius: 16px;
+    font-style: normal;
+     /* text-align: center; */
+}
+
+.logon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-family: 'Lato';
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+::placeholder {
+    font-style: italic;
+}
+
+.enviar:hover {
+    font-family: 'Lato';
+    font-weight: 700;
+    transition-duration: 1s;
+    background-color: rgb(2, 177, 11);
+    opacity: 0.8;
+}
+
+form:hover {
+    transition: ease-in-out 1000ms;
+    box-shadow: 0 0 15px 5px rgb(247, 247, 247);
+}
+

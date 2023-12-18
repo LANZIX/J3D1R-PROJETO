@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;1,100&family=Montserrat:wght@200;400;500;600&family=Roboto:wght@900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+
+
+body {
+    overflow-x: hidden;
+    background-color: #332a37; 
+}
+
+header {
+    width: 42%;
+}
+
+.logo {
+    display: flex;
+    margin-left: 10px;
+    gap: 30px;
+}
+
+.logo span{
+    padding-top: 40px;
+}
+
+.logo a {
+    margin-top: 5px;
+}
+
+.menuOculto{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #444;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+ 
+ }
+ 
+ .menuOculto a{
+     padding: 8px 8px 8px 32px;
+     text-decoration: none;
+     font-size: 25px;
+     color: #999;
+     transition: 0.3s;
+     font-family: 'Kanit';
+     font-weight: 700;
+     font-size: 30px;
+ 
+ }
+ 
+ .btnFechar{
+     position: absolute;
+     top: 0;
+     right: 25px;
+     font-size: 36px;
+     margin-left: 50px;
+ }
+ 
+ @media screen and(max-height: 450px){
+     .menuOculto{padding-top: 15px;}
+     .menuOculto a{font-size: 18;}
+ }
+     
+ .menuOculto{
+    background-color: #282c34;
+    height: 250px;
+    border-radius: 30px;
+ }
+
+ .menuOculto a:hover{
+  color: #fff;
+ 
+ }
+
+
+#esquerda {
+    width: 50vw;
+    height: 200vw;
+}
+
+#lado-esquerdo {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 105vw;
+}
+
+#esquerda .level {
+    color: white;
+    font-weight: 700;
+    padding-top: 0px;
+    display: flex;
+    
+}
+
+.fases {
+    position: relative;
+    width: 170px;
+    margin-left: 150px;
+ }
+
+ ul li a:hover {
+    font-size: 18px;
+    
+ }
+ 
+ li {
+     list-style: none;
+ }
+ 
+ ul {
+     list-style: none;
+     background-color: #712592; 
+     border-radius: 15px;
+ }
+ 
+ ul li {
+     position: relative;
+ }
+ 
+ ul li a {
+     display: block;
+     
+     padding: 10px 37px;
+     color: rgba(255,255,255,var(--tw-text-opacity));
+     text-decoration: none;
+     font-weight: 900;
+     font-size: 1.2rem;
+ }
+ 
+ ul li ul.dropdown {
+     display: block;
+ }
+ 
+ ul li ul.dropdown {
+     width: 100%;
+     background-color: #712592; 
+     border-radius: 15px;
+     position: absolute;
+     z-index: 999;
+     display: none;
+     text-align: center;
+ }
+ ul a:hover {
+     background: #b57b4f;
+     border-radius: 15px;
+ }
+ ul li:hover ul.dropdown {
+     display: block;
+ }
+
+
+.heart span{
+    color: rgb(233, 202, 24);
+    opacity: 0.9;
+    font-size: 16px;
+    font-family: 'roboto';
+}
+
+
+
+.foto{
+    padding-left: 50px;
+}
+
+#esquerda .level p {
+    font-weight: 900;
+    font-size: 2rem;
+    
+    
+}
+
+#esquerda p {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 300;
+    color: #bdb4b6;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-bottom: 20px;
+    line-height: 1.7;
+    font-size: 18px;
+    letter-spacing: .5px;
+    text-align: justify;
+    flex-direction: column;
+    text-shadow: 0 2px 3px #000;
+}
+
+.help{
+    font-family: 'Source Code Pro', monospace;
+    background-color: #b57b4f9f ;
+    font-size: 18px;
+    fill: #fff;
+    color: #fff;
+    
+    
+}
+
+.resposta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 640px;
+    padding: 30px 0 30px 30px;
+    background: #332a37;
+    border-top: 1px solid hsla(347,6%,72%,.2);
+    z-index: 999;
+}
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+}
+
+.editor{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 590px;
+    min-width: 300px;
+    padding: 10px 0 10px 0 1px;
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    border-radius: 16px;
+    background: #282c34;
+    box-shadow: -1px 1px 15px 0 rgb(0 0 0/11%);
+}
+
+
+.line-numbers{
+    margin-top: 11px;
+    padding: 0 20px;
+    text-align: right;
+    color: #707a84;
+}
+
+pre {
+    margin: 0;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    color: rgb(255, 255, 255)
+}
+
+textarea {
+    height: 22px; 
+    width: 60vh;
+    border: none;
+    outline: none; /* contorno */
+    resize: none; /* ele tira a possibilidade de almentar o quadradinho branco */
+    overflow: auto;
+    margin-left: 12px;
+    font-family: Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    font-size: 16px;
+    fill: #fff;
+    color: #fff;
+    background: #46505e;
+    padding-left: 1px;
+    
+}
+
+button {
+    background-color: #8c56e9c9;
+    border: none;
+    border-radius: 4px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(225, 225, 225);
+    fill: #fff;
+    padding: 6px 7px;
+    padding-right: 20px;
+    padding-left: 15px;
+    position: absolute;
+    text-align: center;
+    right: 90px;
+    bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    border-radius: 6px;
+}
+
+#direita {
+    width: 50%;
+    height: 94%;
+    position: fixed;
+    top: 5px;
+    right: 30px;
+    
+}
+
+.action {
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+    position: absolute;
+    z-index: 10;
+    overflow: hidden; 
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 0 5px 4px rgb(23, 104, 57);
+    border-radius: 15px;
+    display: flex;
+    justify-content: start;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+
+#game {
+    width: 100%;
+    height: 100%;
+    background-color: greenyellow;
+    background: url('../img/grama5.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    border-radius: 15px;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+    position: absolute;
+    z-index: 9;
+   
+}
+
+/* Action posiciona os personagens (elementos que se movem)*/
+.grade{
+    width: 20%;
+    height: 20%;
+   /*  border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha{
+    width: 100%;
+    height: 100%;
+    
+
+    display: flex;
+    
+}
+
+.um {
+    
+    padding-top: 50px;
+    
+    
+}
+.dois {
+    justify-content: end;
+    align-items: center;
+}
+
+.objeto{
+    width: 20%;
+    height: 80px;   
+}
+
+.proximafase{
+    background-color: rgb(255, 255, 255);
+    min-width: 400px;
+    height: 290px;
+    padding: 24px 20px 16px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    font-family:   monospace;
+}
+
+h4{
+    color: #000;
+    padding-left: 90px;
+    padding-top: 50px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+}
+
+#pass {
+    margin-right: 50px;
+    color: #fff;
+    background-color: rgba(119, 10, 119, 0.904);
+}
+
+p.vida{
+    color: rgba(219, 70, 70, 0.829);
+    justify-content: center;
+    display: flex;
+    padding-top: 30px;
+    font-size: 17px;
+    padding-right: 20px;
+
+    
+}
+
+
+
+
+/* Backgorund Images */
+.container-objeto:nth-child(5) .objeto{
+    background: url("../img/espadachim.png") no-repeat
+      center ;
+  }
+  .container-objeto:nth-child(3) .objeto{
+    background: url("../img/zoro.png") no-repeat
+      center ;
+  }
+  .container-objeto:nth-child(4) .objeto{
+    background: url("../img/mago.png") no-repeat
+      center;
+      
+  }
+
+
+  .toy{
+    padding-left: 50px;
+  }
+  
+
+    .pulse {
+     animation: infinite;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+   
+    }
+    @-webkit-keyframes pulse {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    }
+    @keyframes pulse {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    } 
+
+    #next:hover{
+        cursor: pointer;
+        background-color: #707a8485;
+        transition: 0.5s;
+     }
+
+    #pass:hover{
+        cursor: pointer;
+        background-color: #707a849f;
+        transition: 0.5s;
+    }

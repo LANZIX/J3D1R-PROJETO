@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;1,100&family=Lora:wght@700&family=Montserrat:wght@200;400;500;600&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@700;800&family=Quicksand:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    text-shadow: 1px 0px 9px 2px #000000;    
+    
+}
+
+header {
+    width: 100vw; 
+    display: flex;   
+    justify-content: space-between;
+    background-color: transparent;
+    position: fixed;
+    z-index: 2;
+}
+
+.fundo {
+    background: url("../img/recife_bg\ \(2\).png") no-repeat
+    center top/cover;
+    
+    
+}
+
+.logo {
+    padding-left: 50px;
+    z-index: 0;
+    padding-top: 10px;
+}
+
+.logo a img {
+    border-radius: 10px;
+}
+
+.hero_bg {
+    padding-top: 270px;
+    z-index: 0;
+}
+
+nav {
+    width: 20%;
+    margin-right: 3rem;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 52px;
+    padding-top: 25px;
+    
+
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: #3155A4;
+    border-radius: 4px;
+    padding: 7px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 20px;
+}   
+
+nav a:hover {
+    transition: 1.5s;
+    box-shadow: 2px 2px 5px 3px #000000;
+}
+
+main {
+    width: 100vw;
+    background-image: linear-gradient(180deg,hsla(0,0%,100%,0),#000 90%);
+    
+}
+
+.y-color {
+    color: #FFB511; 
+}
+
+.r-color {
+    color: #860A35 ;
+}
+
+.g-color{
+    color: #00AD4A ;
+}
+
+
+#start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 150px;
+    padding-bottom: 200px;
+
+    
+}
+
+#start .logo {
+    position: absolute;
+    top: 90px;
+    left: 350px;
+}
+
+#start .logo2 {
+    position: absolute;
+    top: 40px;
+    left: 620px;
+}
+
+#start .logo3 {
+    position: absolute;
+    top: 90px;
+    right: 280px;
+}
+
+#start h1 {
+    font-weight: 800;
+    font-size: 4.5rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgba(255,255,255);
+    text-shadow: 0 0 80px rgb(192 219 255/48%), 0 0 32px rgb(65 120 255/24%);
+    text-shadow: 0 2px 3px #000;
+}
+
+
+#start p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-align: center;
+    text-align: justify;
+    letter-spacing: .025em;
+    color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-shadow: 0 3px 3px #000000;
+    
+}
+
+.btn{
+    padding-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+#start a {
+    color: white;
+    text-decoration: none;
+    background-color: #d04758;
+    border-radius: 10px;
+    padding: 20px;
+    letter-spacing: .025em;
+}
+
+#second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-color: #000;
+}
+
+.b-color {
+    color: #3155A4;
+}
+
+.j-color {
+    color: #FFB511;
+}
+
+.v-color {
+    color: #C34342;
+}
+
+.p-color {
+    color: #00AD4A;
+}
+
+.three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("../img/recife_bg\ \(2\).png") no-repeat
+    center top/cover;
+    -webkit-mask-image: linear-gradient(to top, transparent 1%, black 10%);
+    
+   
+
+}
+
+.plano_fundo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-image: linear-gradient(0deg,hsla(100,0%,0%,0),#000 95%);
+}
+
+
+#second h2 {
+    font-weight: 800;
+    font-size: 3.5rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgba(255,255,255);
+    text-shadow: 0 0 80px rgb(192 219 255/48%), 0 0 32px rgb(65 120 255/24%);
+    text-shadow: 0 3px 3px #000000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+#second .txt {
+    margin-top: 90px;
+}
+
+#second p {
+    color: white;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-align: justify;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    letter-spacing: .025em;
+    text-shadow: 0 2px 2px #000000;
+}
+
+#second .topico {
+    padding-bottom: 50px;
+    font-size: 25px;
+}
+
+#second p span {
+    color: #4169e1;
+    text-shadow: 0 1px 2px #000000;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    letter-spacing: .025em;
+}
+
+#second .p3 {
+    padding-bottom: 50px;
+}
+
+#second .p1 p {
+    font-size: 1.30rem;
+    line-height: 1.75rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    letter-spacing: .025em;
+    padding-bottom: 200px;
+}
+
+#second video {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 800px;
+    border: 1px white solid;
+}
+
+#second .btn {
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+}
+
+#second a {
+    color: white;
+    text-decoration: none;
+    background-color: #d04758;
+    border-radius: 10px;
+    padding: 20px;
+    letter-spacing: .025em;
+}
+
+.fadeInUpBig {
+    -webkit-animation-name: fadeInUpBig;
+    animation-name: fadeInUpBig;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeInUpBig {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fadeInUpBig {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }

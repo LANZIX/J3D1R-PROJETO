@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;1,100&family=Lora:wght@700&family=Montserrat:wght@200;400;500;600&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@700;800&family=Quicksand:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #000000;
+
+}
+
+header {
+    width: 100vw; 
+    display: flex;   
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 10px;
+    padding-left: 60px;
+    
+}
+
+nav {
+    
+    width: 20%;
+    margin-right: 3rem;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+}
+
+main {
+    width: 100vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-bottom: 120px;
+    gap: 10px;
+}
+
+
+.game1 h1 {
+    text-transform:capitalize;
+    font-weight: 800;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 0 80px rgb(192 219 255/48%), 0 0 32px rgb(65 120 255/24%);
+}
+
+.game1 p {
+    color: rgba(156,163,175);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-align: justify;
+    margin-right: 800px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    
+}
+
+.btn {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.btn a {
+    background-color: #d04758;
+    text-decoration: none;
+    color: rgba(255,255,255);
+    border-radius: 10px;
+    padding: 20px;
+    letter-spacing: .1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.game1 img {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    right: 100px;
+   /*  top: 170px; */
+   top: 250px;
+
+}
+
+.game1 .icones {
+    display: flex;
+    gap: 10px;
+}
+
+.icones p {
+    font-size: .75rem;
+    line-height: 1rem;
+    margin: 0;
+    border-radius: .375rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: 2px solid;
+    border-color: rgba(156,163,175,var(--tw-border-opacity));
+    
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeInRight {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fadeInRight {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
+
+    .fadeInUp {
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+        @-webkit-keyframes fadeInUp {
+        0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        }
+        100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+        }
+        }
+        @keyframes fadeInUp {
+        0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        }
+        100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+        }
+        }

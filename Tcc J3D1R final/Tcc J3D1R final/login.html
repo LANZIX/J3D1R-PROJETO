@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="shortcut icon" href="/img/icon_v2_1.png" type="image/x-icon">
+    <title>Log in</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="./img/logo.png-2.png" width="100px" height="90px"></a>
+        </div>
+        
+        <nav>
+            <a href="games.html">Games</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Registre-se</a>
+        </nav>
+    </header>
+    <main>
+    <form id="form">
+        <img src="./img/40bac21458c77a177687847ba2f95f-unscreen.gif" alt="" id="imagem">
+        <h2 class="logon">Faça seu login</h2>
+        <input type="text" name="Email" placeholder="Insira o seu e-mail..." class="e-mail" id="login">
+        <input type="text" name="Senha" placeholder="Digite sua senha..." class="password" id="senha">
+        <input type="submit" name="acao" value="Enviar" class="enviar">
+    </form>
+    </main>
+</body>
+
+<script>
+    const form = document.querySelector('#form');
+    form.addEventListener('submit', logar)
+
+ function logar(e){
+    e.preventDefault();
+    let login = document.getElementById('login').value;
+    let senha = document.getElementById('senha').value;
+
+    console.log(login + senha)
+
+    if(login == "jedir@ios.org.br" && senha == "jedir"){
+                window.location.href = "jogo.html";
+    }else{
+                alert("verifique seu usuário ou senha")
+            } 
+
+ }
+
+</script>
+
+<!--<footer>Encontrou um bug ou quer trocar uma ideia? <a href="#">so manda um oi aqui!</a></footer>
+</html>

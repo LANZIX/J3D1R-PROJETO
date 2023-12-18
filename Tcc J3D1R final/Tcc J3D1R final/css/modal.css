@@ -1,0 +1,28 @@
+.exemploModal, .modalStepTwo {
+    position: fixed;
+    z-index: 999;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: none;
+}
+
+.proximafase {
+    display: flex;
+    flex-direction: column;
+}
+
+.exemploModal a {
+    text-decoration: none;
+    color: #fff;
+  
+}
+.show {
+    display: block;
+}
+
+
+

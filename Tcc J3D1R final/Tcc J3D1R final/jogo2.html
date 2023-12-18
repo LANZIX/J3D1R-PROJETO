@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Nivel 2</title>
+
+    <link rel="shortcut icon" href="/img/icon_v2_1.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/jogo2.css">
+    <link rel="stylesheet" href="./css/modal.css">
+
+   
+
+</head>
+<body>
+        <div id="lado-esquerdo">
+        <header>
+            <div class="logo">
+                
+                <span style="font-size: 30px;cursor: pointer; color: rgb(0, 0, 0);"  onclick="abrirNav()">
+                   &#9776;
+                </span>
+                <a href="index.html"><img src="./img/logo.png-2.png" width="100px" height="100px" ></a>
+            </div>
+            <aside id="menuOculto" class="menuOculto">
+                <a href="javascript:void(0) " class="btnFechar" onclick="fecharNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Registre-se</a>
+            </aside>
+        
+        </header>
+        <section id="esquerda">
+            <div class="level">
+                <p> Level 2</p>
+                <div class="fases">
+                    <ul>
+                        <li>
+                        <a>Nivel 2 of 5 </a>
+                        <ul class="dropdown">
+                            <a href="jogo.html">Nivel 1</a>
+                            <a href="jogo2.html">Nivel 2</a>
+                            <a href="jogo03.html">Nivel 3</a>
+                            <a href="jogo04.html">Nivel 4</a>
+                            <a href="jogo05.html">Nivel 5</a>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p>Heroes' Money:</p>
+            </div>
+            
+            <div class="toy">
+               <!--  <img src="./img/zoro.png" width="65px" height="75px"> -->
+                <img src="./img/mago.png" width="65px" height="75px">
+                <img src="./img/espadachim.png" width="75px" height="75px">
+            </div>
+            <div class="heart">
+                <p><span>84/210</span> 💰</p>
+            </div>
+            <div>
+                <p>
+                    Agora, a segunda parte do plano é Júlia e Carolina se encontrarem na casa do Lucas. Então, ajude-as a chegar à casa do Lucas usando códigos CSS.
+                </p>
+            </div>
+            <div>
+                <p>Utilize a propriedade <span class="help">align-items</span>.<p>
+            </div>
+            <div>
+                <p>A propriedade <span class="help">align-items</span>  serve para definir como os itens devem ser alinhados dentro de uma caixa.
+                </p>
+            </div>
+            <div>
+                <p><span class="help">align-items: flex-start;</span> Os itens são alinhados no início da caixa.
+                   </p>
+            </div>
+            <div>
+                <p><span class="help">align-items: flex-end;</span> Os itens são alinhados no final da caixa.
+                   </p>
+            </div>
+            <div>
+                <p><span class="help">align-items: center;</span> Os itens são centralizados no meio da caixa. </p>
+            </div>
+            <div>
+                <p><span class="help">align-items: stretch;</span> Os itens são esticados para preencher o contêiner (o padrão).
+                    </p>
+            </div>
+            <div class="pulse">
+                <img src="" >
+            </div>
+            <div class="resposta">
+            <div class="editor">
+                <div class="line-numbers">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8</div>
+                <div class="txt">
+                <pre>#action {     
+  display: flex;
+  justify-content: end;</pre>
+                <textarea id="txtGame" spellcheck="false" autocapitalize="none" placeholder="Digite sua resposta aqui ..." style="font-style: italic;"></textarea>
+                
+                <pre>}</pre>
+                <button id="next">Next</button>
+            </div>
+            </div>
+        </div>
+        </section>
+
+    <section id="direita">
+        <div class="action">
+            <div class="linha um">
+                <div class="objeto">
+                    <img src="./img/espadachim.png" class="pulse">
+                    <img src="./img/mago.png" class="pulse">
+                </div> 
+                
+                          
+            </div>
+            
+           
+           </div>
+
+           <div id="game"><!-- cenário -->
+            <div class="grade"></div>
+            <div class="grade"></div>
+            <div class="grade"></div>
+            <div class="grade"></div>
+            <div class="grade"><img src="./img/house.png" ></div>
+            <div class="grade"></div>
+            <div class="grade"></div>
+            <div class="grade"></div>
+            <div class="grade"></div>
+            <div class="grade"></div>
+            <div class="grade"></div>
+            <div class="grade"></div>
+            <div class="grade"></div>
+            <div class="grade"></div>
+            <div class="grade"></div>
+            <div class="grade"></div>
+            <div class="grade"></div>
+            <div class="grade"></div>
+            <div class="grade"></div>
+            <div class="grade"></div>
+            <div class="grade"></div>
+            <div class="grade"></div>
+            <div class="grade"></div>
+            <div class="grade"></div>
+            <div class="grade"><img src="./img/house3.png" ></div>
+    </section>
+    </div>
+
+    <div class="exemploModal">
+        <div class="proximafase">
+          <form action="">
+            <h4>Nível 2 completado!</h4>
+            <p class="vida"><span>+42</span> 💰</p>
+            <div>
+                <button id="pass"><a href="jogo03.html">Próximo Nível →</a></button>
+            </div>
+          </form>
+        </div>
+    </div>
+
+    <div class="modalStepTwo">
+        <div class="proximafase">
+            <form action="">
+              <h4>Parabéns, Você Completou a 1 Parte</h4>
+              <p class="vida">
+                Agora Leve Júlia e Carolina, para se encontrarem na casa de Lucas.
+              </p>
+              <div>
+                  <button class="btn-letsgo">Vamos lá!</button>
+              </div>
+            </form>
+          </div>
+    </div>
+
+    <script src="./js/jogo2.js" defer></script>
+</body>
+</html> 
